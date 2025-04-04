@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>这只是一个正常的恋爱</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: #0f0;
+      font-family: "微软雅黑", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    #cover-container {
+      text-align: center;
+      animation: fadeIn 3s ease-in-out forwards;
+    }
+    #cover-image {
+      width: 300px;
+      height: 400px;
+      background: url('images/jishuheng_eyes.png') no-repeat center center;
+      background-size: cover;
+      margin-bottom: 20px;
+      border: 2px solid #0f0;
+    }
+    #start-button {
+      background-color: black;
+      color: #0f0;
+      border: 1px solid #0f0;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    #start-button:hover {
+      background-color: #0f0;
+      color: black;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(1.1); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div id="cover-container">
+    <div id="cover-image"></div>
+    <h1>这只是一个正常的恋爱</h1>
+    <p>纪书珩在等你，清璃。</p>
+    <button id="start-button" onclick="startGame()">进入问卷</button>
+  </div>
+  <script>
+    function startGame() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
